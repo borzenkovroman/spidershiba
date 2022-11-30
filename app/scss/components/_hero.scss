@@ -1,0 +1,112 @@
+.hero {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center left;
+  height: 100vh;
+  padding-top: 30px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+    position: relative;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__inner {
+    max-width: 740px;
+    width: 100%;
+    margin-right: 120px;
+  }
+
+  &__title {
+    font-size: 80px;
+    font-weight: 800;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  &__subtitle {
+    font-size: 25px;
+    font-weight: 500;
+    color: $grey;
+  }
+
+  &__text {
+    color: $grey-light;
+    font-size: 32px;
+  }
+
+  &__box {
+    position: absolute;
+    bottom: -200px;
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 130px;
+    z-index: 1;
+  }
+
+  &__btn-main {
+    margin-bottom: 20px;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+
+  &__link {
+    font-size: 17px;
+    font-weight: 600;
+    opacity: 0.8;
+    
+    &:hover {
+      opacity: 1;
+      border-bottom: 1px solid $red;
+      padding-bottom: 10px;
+    }
+
+    &:active {
+      border-bottom: 1px solid $white;
+      color: $red;
+      padding-bottom: 10px;
+    }
+
+    &:focus {
+      outline: 3px solid $white;
+      outline-offset: 6px;
+      border-radius: 10px;
+    }
+  }
+
+  &__btn-main {
+    padding: 11px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 0.8;
+
+    &:hover {
+      opacity:  1;
+    }
+  }
+}
